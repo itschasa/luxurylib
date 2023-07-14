@@ -150,7 +150,7 @@ class Client():
         ]
     
     def get_orders(self) -> list[classes.Order]:
-        res = self.client.get('/users/@me/tickets')
+        res = self.client.get('/users/@me/orders')
         resjson = res.json()
 
         return [
